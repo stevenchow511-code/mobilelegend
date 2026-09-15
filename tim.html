@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Tim - Tournament MLBB</title>
+  <link rel="icon" type="image/png" href="https://i.ibb.co/1tw26CJC/image.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', 'Segoe UI', sans-serif; }
+    body { background: #030712; color: #f3f4f6; min-height: 100vh; padding: 20px; }
+
+    .container { max-width: 1100px; margin: 0 auto; display: flex; gap: 20px; }
+    .main-content { flex: 1; background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 24px; }
+
+    .page-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 12px; margin-bottom: 20px; }
+    .page-title { font-size: 20px; font-weight: 800; color: #00f2fe; text-transform: uppercase; letter-spacing: 1px; }
+
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
+    .team-card { background: rgba(31, 41, 55, 0.5); border: 1px solid rgba(255, 255, 255, 0.05); padding: 16px; border-radius: 12px; text-align: center; color: #e5e7eb; font-weight: 700; font-size: 14px; transition: all 0.3s ease; }
+    .team-card:hover { border-color: #00f2fe; background: rgba(0, 242, 254, 0.05); transform: translateY(-3px); }
+
+    .sidebar-menu { width: 240px; background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px; height: fit-content; }
+    .menu-item { padding: 14px 18px; color: #9ca3af; font-weight: 700; font-size: 13px; border-radius: 10px; text-decoration: none; background: rgba(255,255,255,0.02); border: 1px solid transparent; transition: all 0.3s ease; letter-spacing: 0.5px; }
+    .menu-item:hover, .menu-item.active { color: #ffffff; background: linear-gradient(90deg, rgba(0, 242, 254, 0.15), rgba(79, 172, 254, 0.05)); border-color: #00f2fe; box-shadow: 0 0 15px rgba(0, 242, 254, 0.2); transform: translateX(4px); }
+
+    @media (max-width: 768px) { .container { flex-direction: column; } .sidebar-menu { width: 100%; order: -1; } }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="main-content">
+      <div class="page-header">
+        <h2 class="page-title">🛡️ Tim Bertanding</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">ONIC Esports</div>
+        <div class="team-card">RRQ Hoshi</div>
+        <div class="team-card">EVOS Legends</div>
+        <div class="team-card">Alter Ego</div>
+        <div class="team-card">Bigetron Alpha</div>
+        <div class="team-card">Geek Fam</div>
+        <div class="team-card">Aura Fire</div>
+        <div class="team-card">Rebellion Esports</div>
+      </div>
+    </div>
+
+    <div class="sidebar-menu">
+      <a href="/index.html" class="menu-item">BERANDA</a>
+      <a href="/tim.html" class="menu-item active">TIM PARTICIPANT</a>
+      <a href="/jadwal.html" class="menu-item">JADWAL MATCH</a>
+      <a href="/prizepool.html" class="menu-item">PRIZEPOOL</a>
+      <a href="/rules.html" class="menu-item">RULES TURNAMEN</a>
+    </div>
+  </div>
+
+</body>
+</html>
